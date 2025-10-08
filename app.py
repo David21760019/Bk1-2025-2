@@ -89,7 +89,7 @@ def saluda():
 def saludajson():
     return jsonify(data)
 
-@app.route("/pagina")
-@app.route("/pagina/<name>")
+@app.route("/index")
+@app.route("/index/<name>")
 def pagina(name=None):
-    return render_template('pagina.html', person=name)
+    return render_template('index.html', person=name)
